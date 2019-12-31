@@ -1,0 +1,27 @@
+{
+  "name": "rollup-react-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-runkit": "^0.9.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.0",
+    "@rollup/plugin-json": "^4.0.1",
+    "@rollup/plugin-node-resolve": "^6.0.0",
+    "@rollup/plugin-replace": "^2.3.0",
+    "@rollup/plugin-typescript": "^2.0.1",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "rollup": "^1.27.14",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.4"
+  },
+  "scripts": {
+    "bundle": "rollup -c rollup.config.js",
+    "serve": "yarn bundle && npx http-server"
+  }
+}
